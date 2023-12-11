@@ -5,7 +5,7 @@
 // console.log(Me, housemate)
 // housemate = "max"
 // console.log(Me, housemate)
-// var petDog = 'Rex'; 
+// var petDog = 'Rex';
 // console.log(petDog);
 // var a = 6;
 // console.log(a>5 || a>10);
@@ -14,12 +14,11 @@
 // console.log(4-2);
 // var petHungry = true;
 // console.log("Pet is hungry: ", !petHungry);
-// console.log(22 % 5); 
+// console.log(22 % 5);
 // var score = "8";
 // console.log("mid-level skills:", score>0 && score<10);
 
-
-// var age= "10"; 
+// var age= "10";
 // if (age >= 65) {
 //     console.log("You get your income from your pension")
 // }
@@ -59,7 +58,7 @@
 //     default:
 //         console.log ("sleep")    ;
 //         break;
-// } 
+// }
 
 // for (var i = 0; i <= 3; i++) {
 //     console.log("This is line ", i)
@@ -76,7 +75,6 @@
 //     i++
 // }
 // console.log('Counting completed')
-
 
 // for (i=1; i<=10; i++) {
 //     if (i==1){
@@ -108,7 +106,6 @@
 //             console.log(i);
 //         }
 //     }
-
 
 // for (i = 0; i < 2; i++) {
 //     console
@@ -233,8 +230,57 @@
 // }
 // letterFinder("cat", "c");
 
-try {
-    Number(5).toPrecision(300)
-    } catch(e) {
-    console.log("There was an error")
-    }
+// try {
+//     Number(5).toPrecision(300)
+//     } catch(e) {
+//     console.log("There was an error")
+//     }
+
+// let counter = 3;
+// function example () {
+//     console.log (counter);
+//     counter = counter -1
+//     if (counter == 0) return;
+//     example();
+// }
+// example();
+
+// function myDay() {
+//     console.log('Morning');
+//     console.log('Afternoon');
+//     console.log('Evening');
+//     myDay();
+// }
+// myDay()
+
+function type(a) {
+  if (typeof a == "number") {
+    return "number";
+  } else if (typeof a == "string") {
+    return "string";
+  } else {
+    return "unknown";
+  }
+}
+
+function num(a) {
+  return a;
+}
+
+console.log(type(num(5)));
+
+// function num(a) {
+//   return a;
+// }
+
+// function type(a) {
+//   if (typeof a === "number") {
+//     return "number";
+//   } else if (typeof a === "string") {
+//     return "string";
+//   } else {
+//     return "unknown";
+//   }
+// }
+
+// console.log(type(num("boy"))); // outputs: 'number'
