@@ -253,34 +253,20 @@
 // }
 // myDay()
 
-function type(a) {
-  if (typeof a == "number") {
-    return "number";
-  } else if (typeof a == "string") {
-    return "string";
-  } else {
-    return "unknown";
-  }
-}
-
-function num(a) {
-  return a;
-}
-
-console.log(type(num(5)));
-
-// function num(a) {
-//   return a;
-// }
-
 // function type(a) {
-//   if (typeof a === "number") {
+//   if (typeof a == "number") {
 //     return "number";
-//   } else if (typeof a === "string") {
+//   } else if (typeof a == "string") {
 //     return "string";
 //   } else {
 //     return "unknown";
 //   }
 // }
 
-// console.log(type(num("boy"))); // outputs: 'number'
+// function num(a) {
+//   return a;
+// }
+
+// console.log(type(num(5)));
+
+
