@@ -361,14 +361,24 @@
 
 // console.log(localVar);
 
-function meal(animal) {
-  animal.food = animal.food + 10;
+//
+class Bird {
+  useWings() {
+    console.log("Flying!");
+  }
 }
-
-var dog = {
-  food: 10,
-};
-meal(dog);
-meal(dog);
-
-console.log(dog.food);
+class Eagle extends Bird {
+  useWings() {
+    super.useWings();
+    console.log("Barely flapping!");
+  }
+}
+class Penguin extends Bird {
+  useWings() {
+    console.log("Diving!");
+  }
+}
+var baldEagle = new Eagle();
+var kingPenguin = new Penguin();
+baldEagle.useWings(); // "Flying! Barely flapping!"
+kingPenguin.useWings(); // "Diving!"
