@@ -19,15 +19,26 @@
 // baldEagle.useWings(); // "Flying! Barely flapping!"
 // kingPenguin.useWings(); // "Diving!"
 
-function Icecream(flavor) {
-  this.flavor = function () {
-    console.log("the flavor is", flavor);
-  };
-  this.meltIt = function () {
-    console.log(`The ${this.flavor} icecream has melted`);
-  };
-}
+// function Icecream(flavor) {
+//   this.flavor = function () {
+//     console.log("the flavor is", flavor);
+//   };
+//   this.meltIt = function () {
+//     console.log(`The ${this.flavor} icecream has melted`);
+//   };
+// }
 
-let kiwiIcecream = new Icecream("kiwi");
-let appleIcecream = new Icecream("apple");
-kiwiIcecream.flavor();
+// let kiwiIcecream = new Icecream("kiwi");
+// let appleIcecream = new Icecream("apple");
+// kiwiIcecream.flavor();
+
+var man = {
+  legs: true,
+  beard: true,
+  chest: true,
+};
+
+var slimbro = Object.create(man);
+console.log("slimbro has beard:", slimbro);
+slimbro.beard = false;
+console.log("slimbro has beard:", slimbro.beard);
