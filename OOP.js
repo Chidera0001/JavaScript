@@ -1,3 +1,4 @@
+/* Classes in JvaScript*/
 // class Bird {
 //   useWings() {
 //     console.log("Flying!");
@@ -19,6 +20,9 @@
 // baldEagle.useWings(); // "Flying! Barely flapping!"
 // kingPenguin.useWings(); // "Diving!"
 
+
+
+/* Constructors in JavaScript*/
 // function Icecream(flavor) {
 //   this.flavor = function () {
 //     console.log("the flavor is", flavor);
@@ -32,13 +36,18 @@
 // let appleIcecream = new Icecream("apple");
 // kiwiIcecream.flavor();
 
-var man = {
-  legs: true,
-  beard: true,
-  chest: true,
-};
 
-var slimbro = Object.create(man);
-console.log("slimbro has beard:", slimbro);
-slimbro.beard = false;
-console.log("slimbro has beard:", slimbro.beard);
+
+/* Inheritanve in JavaScript*/
+// var man = {
+//   legs: true,
+//   beard: true,
+//   chest: true,
+// };
+
+// var slimbro = Object.create(man);
+// console.log("slimbro has beard:", slimbro);
+// slimbro.beard = false;
+// console.log("slimbro has beard:", slimbro.beard);
+
+
