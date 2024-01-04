@@ -226,6 +226,6 @@ var clothingItem = {
   season: "autumn",
 };
 
-for (var key of Object.keys(clothingItem)) {
+for (const key of Object.keys(clothingItem)) {
   console.log(key, ":", clothingItem[key]);
 }
