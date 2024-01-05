@@ -255,28 +255,28 @@
 // fruits1.pop();
 // console.log(fruits1, "not", fruits2);
 
-const meal = ["soup", "steak", "ice cream"];
-let [starter] = meal;
-console.log(starter);
+// const meal = ["soup", "steak", "ice cream"];
+// let [starter] = meal;
+// console.log(starter);
 
-let set = new Set();
-set.add(1);
-set.add(2);
-set.add(3);
-console.log(set);
+// let set = new Set();
+// set.add(1);
+// set.add(2);
+// set.add(3);
+// console.log(set);
 
-let obj = {
-  key: 1,
-  value: 4,
-};
+// let obj = {
+//   key: 1,
+//   value: 4,
+// };
 
-let output = { ...obj };
-output.value -= obj.key;
+// let output = { ...obj };
+// output.value -= obj.key;
 
-console.log(output.value);
+// console.log(output.value);
 
-function count(...basket) {
-  console.log(basket.length);
-}
+// function count(...basket) {
+//   console.log(basket.length);
+// }
 
-count(10, 9, 8, 7, 6);
+// count(10, 9, 8, 7, 6);

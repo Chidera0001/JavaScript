@@ -1,13 +1,41 @@
-var h1 = document.createElement("h1");
-h1.innerText = "Type into the input to make this text change";
+// // Create an h1 element
+// var h1 = document.createElement('h1');
+// h1.innerText = "Type into the input to make this text change";
 
-var input = document.createElement("input");
-input.setAttribute("type", "text");
+// // Create an input element
+// var input = document.createElement('input');
+// input.setAttribute('type', 'text');
 
-document.body.innerText = "";
-document.body.appendChild(h1);
-document.body.appendChild(input);
+// // Clear the existing content of the document body
+// document.body.innerText = '';
 
-input.addEventListener("change", function () {
-  h1.innerText = input.value;
-});
+// // Append the h1 and input elements to the document body
+// document.body.appendChild(h1);
+// document.body.appendChild(input);
+
+// // Add an event listener to the input element
+// input.addEventListener('change', function() {
+//     // Update the text content of the h1 with the input value
+//     h1.innerText = input.value;
+// });
+
+let h1 = document.querySelector("h1");
+let arr = ["Example Domain", "First Click", "Second Click", "Third Click"];
+// Task 4: Write a click-handling function
+function handleClicks() {
+  switch (h1.innerText) {
+    case arr[0]:
+      h1.innerText = arr[1];
+      break;
+    case arr[1]:
+      h1.innerText = arr[2];
+      break;
+    case arr[2]:
+      h1.innerText = arr[3];
+      break;
+    default:
+      h1.innerText = arr[0];
+  }
+}
+// Example: Add click event listener to call handleClicks function
+h1.addEventListener("click", handleClicks);
