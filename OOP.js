@@ -219,13 +219,21 @@
 // var result = new Animal();
 // console.log(result.noise);
 
-var clothingItem = {
-  price: 50,
-  color: "beige",
-  material: "cotton",
-  season: "autumn",
-};
+// var clothingItem = {
+//   price: 50,
+//   color: "beige",
+//   material: "cotton",
+//   season: "autumn",
+// };
 
-for (const key of Object.keys(clothingItem)) {
-  console.log(key, ":", clothingItem[key]);
+// for (const key of Object.keys(clothingItem)) {
+//   console.log(key, ":", clothingItem[key]);
+// }
+
+/* Rest operator in functions */
+function addTaxToPrices(taxRate, ...itemsBought) {
+  return itemsBought.map((item) => taxRate * item);
 }
+
+let shoppingcart = addTaxToPrices(1.1, 46, 89, 35, 79);
+console.log(shoppingcart);
