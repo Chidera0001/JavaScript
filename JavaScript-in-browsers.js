@@ -19,23 +19,32 @@
 //     h1.innerText = input.value;
 // });
 
-let h1 = document.querySelector("h1");
-let arr = ["Example Domain", "First Click", "Second Click", "Third Click"];
-// Task 4: Write a click-handling function
-function handleClicks() {
-  switch (h1.innerText) {
-    case arr[0]:
-      h1.innerText = arr[1];
-      break;
-    case arr[1]:
-      h1.innerText = arr[2];
-      break;
-    case arr[2]:
-      h1.innerText = arr[3];
-      break;
-    default:
-      h1.innerText = arr[0];
-  }
+// let h1 = document.querySelector("h1");
+// let arr = ["Example Domain", "First Click", "Second Click", "Third Click"];
+// // Task 4: Write a click-handling function
+// function handleClicks() {
+//   switch (h1.innerText) {
+//     case arr[0]:
+//       h1.innerText = arr[1];
+//       break;
+//     case arr[1]:
+//       h1.innerText = arr[2];
+//       break;
+//     case arr[2]:
+//       h1.innerText = arr[3];
+//       break;
+//     default:
+//       h1.innerText = arr[0];
+//   }
+// }
+// // Example: Add click event listener to call handleClicks function
+// h1.addEventListener("click", handleClicks);
+
+function scopeTest() {
+  var y = 44;
+
+  console.log(x);
 }
-// Example: Add click event listener to call handleClicks function
-h1.addEventListener("click", handleClicks);
+
+var x = 33;
+scopeTest();
