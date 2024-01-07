@@ -40,34 +40,40 @@
 // // Example: Add click event listener to call handleClicks function
 // h1.addEventListener("click", handleClicks);
 
-function scopeTest() {
-  var y = 44;
+// function scopeTest() {
+//   var y = 44;
 
-  console.log(x);
+//   console.log(x);
+// }
+
+// var x = 33;
+// scopeTest();
+
+// class Cake {
+//   constructor(lyr) {
+//     this.layers = lyr;
+//   }
+
+//   getLayers() {
+//     return this.layers;
+//   }
+// }
+
+// class WeddingCake extends Cake {
+//   constructor() {
+//     super(2);
+//   }
+
+//   getLayers() {
+//     return super.getLayers() * 5;
+//   }
+// }
+
+// var result = new WeddingCake();
+// console.log(result.getLayers());
+
+function count(...food) {
+  console.log(food.length);
 }
 
-var x = 33;
-scopeTest();
-
-class Cake {
-  constructor(lyr) {
-    this.layers = lyr;
-  }
-
-  getLayers() {
-    return this.layers;
-  }
-}
-
-class WeddingCake extends Cake {
-  constructor() {
-    super(2);
-  }
-
-  getLayers() {
-    return super.getLayers() * 5;
-  }
-}
-
-var result = new WeddingCake();
-console.log(result.getLayers());
+count("Burgers", "Fries", null);
