@@ -72,8 +72,28 @@
 // var result = new WeddingCake();
 // console.log(result.getLayers());
 
-function count(...food) {
-  console.log(food.length);
-}
+// function count(...food) {
+//   console.log(food.length);
+// }
 
-count("Burgers", "Fries", null);
+// count("Burgers", "Fries", null);
+
+const dishData = [
+  {
+    name: "Italian pasta",
+    price: 9.55,
+  },
+  {
+    name: "Rice with veggies",
+    price: 8.65,
+  },
+  {
+    name: "Chicken with potatoes",
+    price: 15.55,
+  },
+  {
+    name: "Vegetarian Pizza",
+    price: 6.45,
+  },
+];
+const tax = 1.2;
