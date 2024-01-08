@@ -283,7 +283,7 @@
 
 var result = 1;
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 6; i++) {
   result += 2;
 }
 
