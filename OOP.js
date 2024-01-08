@@ -261,7 +261,7 @@
 
 // let set = new Set();
 // set.add(1);
-// set.add(2);
+// set.add(2);m
 // set.add(3);
 // console.log(set);
 
@@ -280,3 +280,11 @@
 // }
 
 // count(10, 9, 8, 7, 6);
+
+var result = 0;
+
+for (var i = 0; i < 5; i++) {
+  result += 2;
+}
+
+console.log(result);
