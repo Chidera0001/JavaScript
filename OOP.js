@@ -281,7 +281,7 @@
 
 // count(10, 9, 8, 7, 6);
 
-var result = 3;
+var result = 1;
 
 for (var i = 0; i < 5; i++) {
   result += 2;
