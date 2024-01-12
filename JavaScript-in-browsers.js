@@ -134,3 +134,32 @@ function getDiscount(taxBoolean, guests) {
 
 getDiscount(true, 2);
 getDiscount(false, 10);
+function loadNewVocabulary(language) {
+  let vocabulary;
+  switch (language) {
+    case "Spanish":
+      vocabulary = ["hola", "amigo", "gracias"];
+      break;
+    case "French":
+      vocabulary = ["bonjour", "ami", "merci"];
+      break;
+    case "German":
+      vocabulary = ["hallo", "freund", "danke"];
+      break;
+    default:
+      vocabulary = [];
+      console.log("Language not supported");
+  }
+  displayVocabulary(vocabulary);
+}
+function displayVocabulary(words) {
+  if (words.length === 0) {
+    console.error("No vocabulary loaded");
+    return;
+  }
+  words.forEach((word) => {
+    console.log(`Word: ${word}`);
+  });
+}
+// Simulating a user selecting a language
+loadNewVocabulary("Italian");
